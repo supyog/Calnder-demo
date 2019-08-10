@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+table{
+  border:1px solid black;
+  border-collapse: collapse;
+  width: 60%;
+  margin: 25vw 20vw;
+  text-align: center;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+  border:1px solid black;
+}
+tr{
+  border:1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 25vw 20vw;
+  text-align: center;
+}
+.day{
+  width: 20%;
+  text-align: left;
+  color:black;
+  font-weight: 400;
+    transition: transform .2s;
+    font-weight: bold;
+    border: 1px solid white;
+}
+.day:hover{
+     transform: scale(1.5);
+}
+td{
+    border:1px solid white;
+    color:black;
+    font-weight:bold;
+}
+#month{
+  color:black;
+  background-color: #eee;
+  font-family: Verdana, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
